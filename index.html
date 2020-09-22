@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Slice of Pizza </h1>
+    <h2>Now we deliver</h2>
+
+    <div> 
+      <h4>Size</h4> 12 ($12), 15 ($15), 18($18)
+      <br>
+      <input id= "size-input" type="range" value = "15" min="12" max="18" step="3"</input>
+      
+      <br>
+
+      <div>
+        <h4>Crust Type</h4>
+  <select id = "crust-input">
+        <option value= "Regular">Regular</option>
+        <option value = "Thin">Thin</option>
+        <option value = "Deep-dish">DeepDish</option>
+      </select>
+      </div>
+<br>
+
+    <div>
+<h4>Sauce</h4>
+<input type="radio" name="sauce" value="Red">Red</input>
+<input type="radio" name="sauce" value="White">White</input>
+<input type="radio" name="sauce" value="Green">Green</input>
+    </div>
+  
+<div>
+<h4>Toppings</h4>
+<input type ="checkbox" name="topping" value="pepperoni">Pepperoni</input><br>
+<input type ="checkbox" name="topping" value="mushroom">Mushroom</input><br>
+<input type ="checkbox" name="topping" value="meatball">Meatball</input><br>
+<input type ="checkbox" name="topping" value="peppers">Peppers</input><br>
+</div>
+
+<div>
+<h4>Extras</h4>
+<input id="extra-cheese-input" type="checkbox" value="Extra cheese">Extra Cheese (+1.00)</input>
+</div>
+
+<div>
+<h4>Zip Code: Needs to be 98102!</h4>
+<input id="zip-input" type="text" onchange="checkInput()"></input>
+</div>
+
+
+      <button onclick="onSubmit()">Check Value</button>
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
