@@ -24,6 +24,7 @@ if(validate()){
 function validate(){
 
 var zip = parseInt(document.getElementById('zip-input').value)
+var inputStyle = document.getElementById('topping')
 
   if(zip !== 98102){
     alert("you need to order from 98102")
@@ -73,10 +74,14 @@ break;
 /* Get toppings as an array */
 order.toppings = []; /* Start with empty array */
 var toppingCheckboxes = document.getElementsByName('topping');
+
+
 for (i = 0; i < toppingCheckboxes.length; i++) {
+
 if (toppingCheckboxes[i].checked) {
 order.toppings.push(toppingCheckboxes[i].value);
 }
+
 }
 /* Lets get the extras individually */
 order.extraCheese = document.getElementById('extra-cheese-input').checked;
